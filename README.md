@@ -16,3 +16,27 @@ This script will symlink many of the shared config in the home folder, set the c
 ## list of formulas
 
 TODO
+
+## enable 3 fingers drag
+
+TODO
+
+## enable tap to click
+
+TODO
+
+## adjust key repeat speed
+
+TODO
+
+## configure hot corners
+
+TODO
+
+## configure dock
+
+TODO
+
+## setup chrome
+
+TODO
