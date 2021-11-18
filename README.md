@@ -94,8 +94,8 @@ This script will symlink many of the shared config in the home folder, set the c
 ~/Dropbox/Sync/dotfiles/install.sh
 ```
 
-* iStat menu
-* bartender
+* brew install --cask istat-menus
+* brew install --cask bartender
 * brew install --cask visual-studio-code
   * login with github
 
