@@ -55,17 +55,21 @@ TODO
 
 # install software
 
-## manual install
+## install the `Dropbox`
 
-* install `Homebrew`: https://brew.sh/
-* install the `Dropbox` client: https://www.dropbox.com/install
-  * in preferences make sure the `Sync` folder is selected
+https://www.dropbox.com/install
 
-## automatic install
+## install fonts
 
-This script will symlink many of the shared config in the home folder, set the correct permissions and install a list of software from a brewfile
+Open `Font Book` and drag in the fonts in `~/Dropbox/Sync/Fonts`
 
-    ~/Dropbox/Sync/dotfiles/install.sh
+## setup terminal
+
+This script will symlink many of the shared config in the home folder, set the correct permissions and install a list of software from a brewfile.
+
+```
+~/Dropbox/Sync/dotfiles/install.sh
+```
 
 ## list of formulas
 
