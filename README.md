@@ -3,6 +3,11 @@ Detailed setup instructions and automation for a quick machine setup
 
 # configure os
 
+## finder
+
+show extensions
+folders on top
+
 ## sign in with apple id
 
 TODO
