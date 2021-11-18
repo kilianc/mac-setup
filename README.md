@@ -28,13 +28,14 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeF
 
 ## enable tap to click
 
-https://mac-os-key-repeat.vercel.app/
-
 ```
-defaults -currentHost write -globalDomain com.apple.mouse.tapBehavior -int 0
+defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad -bool true
 ```
 
 ## adjust key repeat speed
+
+https://mac-os-key-repeat.vercel.app/
 
 ```
 defaults write -g ApplePressAndHoldEnabled -bool false
