@@ -71,6 +71,13 @@ This script will symlink many of the shared config in the home folder, set the c
 ~/Dropbox/Sync/dotfiles/install.sh
 ```
 
+* Open `iTerm` preferences
+* Go to `General > Preferences > Browse`
+* Select `~/Dropbox/Sync/iTerm2`
+* Click `Don't Copy` (wipes local settings)
+* Set `Save Changes` to `Automatically`
+* Restart `iTerm`
+
 ## list of formulas
 
 TODO
