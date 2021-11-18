@@ -65,7 +65,7 @@ TODO
 
 This script will symlink many of the shared config in the home folder, set the correct permissions and install a list of software from a brewfile
 
-    ~/Dropbox/Sync/dotfile/install.sh
+    ~/Dropbox/Sync/dotfiles/install.sh
 
 ## list of formulas
 
