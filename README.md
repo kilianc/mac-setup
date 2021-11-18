@@ -23,11 +23,17 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeF
 
 ## enable tap to click
 
-TODO
+```
+defaults -currentHost write -globalDomain com.apple.mouse.tapBehavior -int 0
+```
 
 ## adjust key repeat speed
 
-TODO
+```
+defaults write -g ApplePressAndHoldEnabled -bool false
+defaults write -g InitialKeyRepeat -int 12
+defaults write -g KeyRepeat -int 2
+```
 
 ## configure hot corners
 
