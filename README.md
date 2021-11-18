@@ -63,12 +63,16 @@ https://www.dropbox.com/install
 
 Open `Font Book` and drag in the fonts in `~/Dropbox/Sync/Fonts`
 
-## setup terminal
-
-This script will symlink many of the shared config in the home folder, set the correct permissions and install a list of software from a brewfile.
+## install brew
 
 ```
-~/Dropbox/Sync/dotfiles/install.sh
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+## install `iTerm2`
+
+```
+/opt/homebrew/bin/brew install --cask "iterm2"
 ```
 
 * Open `iTerm` preferences
@@ -77,6 +81,22 @@ This script will symlink many of the shared config in the home folder, set the c
 * Click `Don't Copy` (wipes local settings)
 * Set `Save Changes` to `Automatically`
 * Restart `iTerm`
+
+# install `XCode`
+
+
+
+## install all apps
+
+This script will symlink many of the shared config in the home folder, set the correct permissions and install a list of software from a brewfile.
+
+```
+~/Dropbox/Sync/dotfiles/install.sh
+```
+
+* iStat menu
+* bartender
+
 
 ## list of formulas
 
