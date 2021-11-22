@@ -105,7 +105,7 @@ Follow ups:
 
 See https://superuser.com/questions/1211108/remove-osx-spotlight-keyboard-shortcut-from-command-line/1688991#1688991
 
-Disable `"Show Spotlight search" hotkey`
+Disable `"Show Spotlight search"` hotkey
 
 ```sh
 /usr/libexec/PlistBuddy ~/Library/Preferences/com.apple.symbolichotkeys.plist \
