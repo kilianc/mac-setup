@@ -101,6 +101,38 @@ Follow ups:
 * `Bartender`: TODO: looking for a way to export/import settings
 * `Alfred`: activate license, set macOS permissions and set the preferences folder to `~/Dropbox/Sync/Alfred`
 
+## Replace Spotlight with Alfred
+
+See https://superuser.com/questions/1211108/remove-osx-spotlight-keyboard-shortcut-from-command-line/1688991#1688991
+
+Disable "Show Spotlight search" hotkey
+
+```
+/usr/libexec/PlistBuddy ~/Library/Preferences/com.apple.symbolichotkeys.plist \
+  -c "Delete :AppleSymbolicHotKeys:64" \
+  -c "Add :AppleSymbolicHotKeys:64:enabled bool false" \
+  -c "Add :AppleSymbolicHotKeys:64:value:parameters array" \
+  -c "Add :AppleSymbolicHotKeys:64:value:parameters: integer 65535" \
+  -c "Add :AppleSymbolicHotKeys:64:value:parameters: integer 49" \
+  -c "Add :AppleSymbolicHotKeys:64:value:parameters: integer 1048576" \
+  -c "Add :AppleSymbolicHotKeys:64:type string standard"
+```
+
+Disable "Show Finder search window" hotkey
+
+```
+/usr/libexec/PlistBuddy ~/Library/Preferences/com.apple.symbolichotkeys.plist \
+  -c "Delete :AppleSymbolicHotKeys:65" \
+  -c "Add :AppleSymbolicHotKeys:65:enabled bool false" \
+  -c "Add :AppleSymbolicHotKeys:65:value:parameters array" \
+  -c "Add :AppleSymbolicHotKeys:65:value:parameters: integer 65535" \
+  -c "Add :AppleSymbolicHotKeys:65:value:parameters: integer 49" \
+  -c "Add :AppleSymbolicHotKeys:65:value:parameters: integer 1572864" \
+  -c "Add :AppleSymbolicHotKeys:65:type string standard"
+```
+
+Open Alfred preferences and change the shortcut back to `⌘ + ⎵`
+
 ## list of formulas
 
 TODO
