@@ -96,8 +96,10 @@ This script will symlink many of the shared config in the home folder, set the c
 
 Follow ups:
 
-* `iStat Menus`: Load settings from `iStat Menus Settings.ismp`
-* `Bartender`: looking for a way to export/import settings
+* `1Password`: use the iPhone QR code to sign-in and verify access to passwords and licenses
+* `iStat Menus`: load settings from `iStat Menus Settings.ismp`
+* `Bartender`: TODO: looking for a way to export/import settings
+* `Alfred`: activate license, set macOS permissions and set the preferences folder to `~/Dropbox/Sync/Alfred`
 
 ## list of formulas
 
