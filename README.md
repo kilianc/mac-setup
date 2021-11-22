@@ -107,7 +107,7 @@ See https://superuser.com/questions/1211108/remove-osx-spotlight-keyboard-shortc
 
 Disable "Show Spotlight search" hotkey
 
-```
+```sh
 /usr/libexec/PlistBuddy ~/Library/Preferences/com.apple.symbolichotkeys.plist \
   -c "Delete :AppleSymbolicHotKeys:64" \
   -c "Add :AppleSymbolicHotKeys:64:enabled bool false" \
@@ -120,7 +120,7 @@ Disable "Show Spotlight search" hotkey
 
 Disable "Show Finder search window" hotkey
 
-```
+```sh
 /usr/libexec/PlistBuddy ~/Library/Preferences/com.apple.symbolichotkeys.plist \
   -c "Delete :AppleSymbolicHotKeys:65" \
   -c "Add :AppleSymbolicHotKeys:65:enabled bool false" \
@@ -131,7 +131,7 @@ Disable "Show Finder search window" hotkey
   -c "Add :AppleSymbolicHotKeys:65:type string standard"
 ```
 
-Open Alfred preferences and change the shortcut back to `⌘ + ⎵`
+Open `Alfred` preferences and change the shortcut back to `⌘ + ⎵`
 
 ## list of formulas
 
