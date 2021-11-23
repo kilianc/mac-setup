@@ -16,7 +16,7 @@ TODO
 
 TODO
 
-## enable 3 fingers drag
+## Enable 3 fingers drag
 
 ```
 defaults write com.apple.AppleMultitouchTrackpad Dragging -bool true
@@ -27,7 +27,7 @@ defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool t
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerDrag -bool true
 ```
 
-## enable tap to click
+## Enable tap to click
 
 ```
 defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
@@ -35,7 +35,7 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 ```
 
-## adjust key repeat speed
+## Adjust key repeat speed
 
 https://mac-os-key-repeat.vercel.app/
 
@@ -53,23 +53,21 @@ TODO
 
 TODO
 
-# install software
-
-## install the `Dropbox`
+## Install the `Dropbox` client
 
 https://www.dropbox.com/install
 
-## install fonts
+## Install fonts
 
-Open `Font Book` and drag in the fonts in `~/Dropbox/Sync/Fonts`
+Open `Font Book` and drag in the fonts in `~/Dropbox/Sync/Fonts`.
 
-## install brew
+## Install `Homebrew`
 
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-## install `iTerm2`
+## Install `iTerm2`
 
 ```
 /opt/homebrew/bin/brew install --cask "iterm2"
@@ -82,7 +80,7 @@ Open `Font Book` and drag in the fonts in `~/Dropbox/Sync/Fonts`
 * Set `Save Changes` to `Automatically`
 * Restart `iTerm`
 
-# install `XCode`
+# Install `XCode`
 
 Open the `App Store` and install `XCode` from the developer section.
 
@@ -105,7 +103,7 @@ Follow ups:
 
 See https://superuser.com/questions/1211108/remove-osx-spotlight-keyboard-shortcut-from-command-line/1688991#1688991
 
-Disable `"Show Spotlight search"` hotkey
+Disable `"Show Spotlight search"` hotkey:
 
 ```sh
 /usr/libexec/PlistBuddy ~/Library/Preferences/com.apple.symbolichotkeys.plist \
@@ -118,7 +116,7 @@ Disable `"Show Spotlight search"` hotkey
   -c "Add :AppleSymbolicHotKeys:64:type string standard"
 ```
 
-Disable `"Show Finder search window"` hotkey
+Disable `"Show Finder search window"` hotkey:
 
 ```sh
 /usr/libexec/PlistBuddy ~/Library/Preferences/com.apple.symbolichotkeys.plist \
