@@ -1,20 +1,27 @@
 # mac-setup
-Detailed setup instructions and automation for a quick machine setup
+
+Detailed setup instructions and automation for a quick machine setup.
 
 # configure os
 
-## finder
-
-show extensions
-folders on top
-
-## sign in with apple id
-
-TODO
-
-## setup touch id
-
-TODO
+* Finder
+  * show extensions
+  * show folders on top
+* Hot corners
+  * TR: Notification Center
+  * BR: Desktop
+  * TL: Mission Control
+  * BL: Lock Screen
+* Dock
+  * No recents
+  * No downloads
+  * Autohide
+  * Remove all apps
+* Apple id
+  * Login in System Preferences and check App Store
+  * Enable Desktop Sync: System Preferences > Apple ID > iCloud Options
+* Touch id
+  * Enable for unlock and purchases
 
 ## Enable 3 fingers drag
 
@@ -35,27 +42,23 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 ```
 
+N.B. This is currently resulting in a weird lag, I haven't found a solution yet.
+
 ## Adjust key repeat speed
 
 https://mac-os-key-repeat.vercel.app/
 
 ```
 defaults write -g ApplePressAndHoldEnabled -bool false
-defaults write -g InitialKeyRepeat -int 10
+defaults write -g InitialKeyRepeat -int 12
 defaults write -g KeyRepeat -int 1
 ```
 
-## configure hot corners
-
-TODO
-
-## configure dock
-
-TODO
-
 ## Install the `Dropbox` client
 
-https://www.dropbox.com/install
+Go to https://www.dropbox.com/connect and use the iPhone app > Account > Connect a computer.
+
+Configure selective sync and opt in on the `Sync` folder, then open Finder and right click on it to Smart Sync > Local.
 
 ## Install fonts
 
@@ -99,6 +102,11 @@ Follow ups:
 * `Bartender`: TODO: looking for a way to export/import settings
 * `Alfred`: activate license, set macOS permissions and set the preferences folder to `~/Dropbox/Sync/Alfred`
 
+## Setup chrome
+
+* Create a persona and login on work account
+* Create a persona and login on personal account
+
 ## Replace Spotlight with Alfred
 
 See https://superuser.com/questions/1211108/remove-osx-spotlight-keyboard-shortcut-from-command-line/1688991#1688991
@@ -130,11 +138,3 @@ Disable `"Show Finder search window"` hotkey:
 ```
 
 Open `Alfred` preferences and change the shortcut back to `⌘ + ⎵`
-
-## list of formulas
-
-TODO
-
-## setup chrome
-
-TODO
