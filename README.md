@@ -73,6 +73,7 @@ Open `Font Book` and drag in the fonts in `~/Dropbox/Sync/Fonts`.
 ## Install `iTerm2`
 
 ```
+eval "$(/opt/homebrew/bin/brew shellenv)"
 /opt/homebrew/bin/brew install --cask "iterm2"
 ```
 
