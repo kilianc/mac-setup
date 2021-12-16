@@ -102,6 +102,7 @@ Follow ups:
 * `iStat Menus`: load settings from `iStat Menus Settings.ismp`
 * `Bartender`: TODO: looking for a way to export/import settings
 * `Alfred`: activate license, set macOS permissions and set the preferences folder to `~/Dropbox/Sync/Alfred`
+* `VSCode`: activate Settings Sync and sign-in with GitHub
 
 ## Setup chrome
 
